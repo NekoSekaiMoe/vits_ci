@@ -18,6 +18,13 @@ RUN apt-get update && apt-get install -y \
     useradd -m -u 1000 user && \
     cd /vits/ && \
     pip install --no-cache-dir pip==22.3.1 && \
+    pip install --no-cache-dir \
+        datasets \
+        "huggingface-hub>=0.19" \
+        "hf-transfer>=0.1.4" \
+        "protobuf<4" \
+        "click<8.1" \
+        "pydantic~=1.0" && \
     pip install --no-cache-dir -r requirements.txt
 
 WORKDIR /vits
