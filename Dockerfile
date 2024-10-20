@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
         libsm6 \
         libxext6 \
         cmake \
+        python3 \
+        python3-pip \
         rsync \
         libgl1-mesa-glx \
         curl && \
