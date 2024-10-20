@@ -19,7 +19,6 @@ RUN apt-get update && apt-get install -y \
     git clone https://huggingface.co/spaces/Mahiruoshi/BangDream-Bert-VITS2 /vits --depth=1 && \
     useradd -m -u 1000 user && \
     cd /vits/ && \
-    pip install --no-cache-dir pip==22.3.1 && \
     pip install --no-cache-dir \
         datasets \
         "huggingface-hub>=0.19" \
